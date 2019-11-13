@@ -7,7 +7,7 @@ require get_template_directory().'/include/setup.php';
 add_action('wp_enqueue_scripts', 'gs_theme_styles');
 
 /*
-depois que for carregado adicionar propriedades
+2- depois que for carregado adicionar propriedades
 (ex: menu, suporta titulo, logo, etc).
 */
 add_action('after_setup_theme', 'gs_after_setup');

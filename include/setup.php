@@ -22,6 +22,15 @@ function gs_theme_styles() {
 
 }
 
+/*
+2- depois que for carregado, adicionar propriedades
+(ex: menu, suporta titulo, logo, etc).
+*/
 function gs_after_setup() {
-    
+    //título
+    add_theme_support('title-tag');
+
+    //registrando menu
+    register_nav_menu("primary", __('Primary Menu', 'start-bootstrap'));
+
 }
