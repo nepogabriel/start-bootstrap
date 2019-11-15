@@ -27,8 +27,13 @@ function gs_theme_styles() {
 (ex: menu, suporta titulo, logo, etc).
 */
 function gs_after_setup() {
+    //*** HABILITAR FUNÇÕES ***
     //título
     add_theme_support('title-tag');
+    //logo
+    add_theme_support('custom-logo');
+    //thumbnail
+    add_theme_support('post-thumbnails');
 
     //registrando menu
     register_nav_menu("primary", __('Primary Menu', 'start-bootstrap'));
